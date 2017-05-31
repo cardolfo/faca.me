@@ -1,0 +1,4 @@
+<%= form_tag("/shorter", method: ":post") do %>
+  <%= text_field_tag("shorter[url]", nil, placeholder: 'Digite a url a ser encurtada') %>
+  <%= submit_tag("Faca nela!") %>
+<% end %>
