@@ -3979,3 +3979,333 @@ Processing by ShorterController#shorter as HTML
 Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-01 10:56:32 -0300
+Processing by ShorterController#index as HTML
+  Rendering shorter/index.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (4.4ms)
+  Rendered shorter/index.html.erb within layouts/application (64.5ms)
+Completed 200 OK in 814ms (Views: 752.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 10:56:39 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XQaQ9elCdRhhFMDXOfGQ+DQKv+zL1BSArvHGNII72BN3fd2ZS38paZHVmfoH2WbXyf64VhqR4NeI5UZ5Jtqayg==", "shorter"=>{"url"=>"as"}, "commit"=>"Faca nela!"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/shorter_controller.rb:10:in `shorter'
+  Rendering /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.5ms)
+Started GET "/" for 127.0.0.1 at 2017-06-01 10:56:43 -0300
+Processing by ShorterController#index as HTML
+  Rendering shorter/index.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (1.4ms)
+  Rendered shorter/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 11:19:58 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8qfhzN8Jmq3IgoYczkZAi7RyNZu7igGjgyWYo2POQBTY3KygfTTG3DhD3zHwbrakSYYyIWrP9fSlMRjuxy8CzQ==", "shorter"=>{"url"=>"asas"}, "commit"=>"Faca nela!"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/shorter_controller.rb:11:in `to_s'
+app/controllers/shorter_controller.rb:11:in `shorter'
+  Rendering /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/share/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.1ms)
+Started GET "/" for 127.0.0.1 at 2017-06-01 11:21:06 -0300
+Processing by ShorterController#index as HTML
+  Rendering shorter/index.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.7ms)
+  Rendered shorter/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 11:21:19 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SeO72C/g19bK630s2kOgMdYAAY6vBEmkRdxLel2ukG9jmPa0jd2LpzoqJAHka1YeK/QGNH5BvfNjyMs3+U/Stg==", "shorter"=>{"url"=>"asas"}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 11:21:25 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QXS2M4eKRFw9sggymvQ5Zbq4hyLxNY3Ti5rqtYo0D/trD/tfJbcYLc1zUR+k3M9KR0yAmCBweYStjmr4LtVNIg==", "shorter"=>{"url"=>"dasdas"}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-01 11:32:54 -0300
+Processing by ShorterController#index as HTML
+  Rendering shorter/index.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 11:33:11 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RgxoHfF1WDQKJfi7BdJEe0bS2kvmpnLNo7s+UYEWWzBsdyVxU0gERfrkoZY7+rJUuybd8TfjhpqFr74cJfcZ6Q==", "shorter"=>{"url"=>"www.google.com"}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 11:33:18 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YEKH9GBbl0B0BdTcH3yZ4lF2x7s1zLdZAyN7wX2klclKOcqYwmbLMYTEjfEhVG/NrILAAeSJQw4lN/uM2UXXEA==", "shorter"=>{"url"=>"www.cardolfo.com.br"}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 11:33:47 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"StlIlFxy1+VgUCMJtd/itoNXnM7wuDOIF3/z3MStqxFgogX4/k+LlJCReiSL9xSZfqObdCH9x98xa3ORYEzpyA==", "shorter"=>{"url"=>"www.cardolfo.com.br"}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:34 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AQ7EgOKs4B/mdb/r8qMOmGJB6Ae5iJEManUKRsAal/UrdYnsQJG8bha05sbMi/i3n7XvvWjNZVtMYYoLZPvVLA==", "shorter"=>{"url"=>"www.google.com"}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/shorter.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 507ms (Views: 424.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:43 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6rJz90lZlgOXMYEGh1vu6C8ud0kysK7EwpFXK2SWekfAyT6b62TKcmfw2Cu5cxjH0tpw8+P1WpPkhddmwHc4ng==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (1.0ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:44 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iGqmh3CpBFp7kA1EvyL/LR9mNB4Ey6m9xs10p7+MeAWiEevr0pRYK4tRVGmBCgkC4pIzpNWOXerg2fTqG2063A==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:45 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GCNCnIWCWzxuYMQreYI2/dzfwaYUHprK5GC5kqR6EoQyWA/wJ78HTZ6hnQZHqsDSISvGHMVbbp3CdDnfAJtQXQ==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:46 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1shPKyJAEMw7ofSm6fFZZGSNWA71oPEIKrrOiVj1POj8swJHgH1MvctgrYvX2a9LmXlftCTlBV8Mrk7E/BR+MQ==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (1.0ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:46 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d6MGkujjXpSqNvUq1v0HDVP9e0RA9EYdc9q/P7dblBtd2Ev+St4C5Vr3rAfo1fEirgl8/pGxskpVzj9yE7rWwg==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:48 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"229eOu6yiIcYeOq1QwdjzXg3gC/06DZSPZGK2MjSz97xFBNWTI/U9ui5s5h9L5XihcOHlSWtwgUbhQqVbDONBw==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:49 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8RNUFwUPfWvffJu4zF+xx4VKZPBKsCarw4vAl7lerjHbaBl7pzIhGi+9wpXyd0foeL5jSpv10vzln0DaHb/s6A==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.7ms)
+  Rendered shorter/shorter.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:49 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dBiTYgE3YQUR7Y/ACv5jqKWAigf2XzYOzLbtPQ/tyjReY94Oowo9dOEs1u001pWHWHSNvScawlnqom1wqwyI7Q==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:50 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/HwU3++2yw7K9JOcNFMkEnugsY7DOaxdz1T8pKoPzMvWB1mzTYuXfzo1yrEKe9I9hlS2NBJ8WArpQHzpDu6OEg==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:50 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uHRX4u4SX7hwdIqDzHrC3Xoxc1+eBMX/jQKFkpRE6HKSDxqOTC8DyYC1067yUjTyh8V05U9BMairFgXfMKWqqw==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:51 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YZ2Fjt1Xn4foIGuzJivS+Q5iBi1ggvz9OS8RsiLsAutL5sjif2rD9hjhMp4YAyTW85YBl7HHCKofO5H/hg1AMg==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:52 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BHNZGg+FFxbkpSGOGMNoa8vHx0FPmxJQ+XiuV1SdemwuCBR2rbhLZxRkeKMm655ENjPA+57e5gffbC4a8Hw4tQ==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (1.0ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:52 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2grhWhe8wji+BdWRASmho/xLUqfDFcoo6AuqdLOTqnHwcaw2tYGeSU7EjLw/AVeMAb9VHRJQPn/OHyo5F3LoqA==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:53 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bKgKryaDMVy4tK475kCAfMdraDFVsVR2dA2o2ptcQP5G00fDhL5tLUh19xbYaHZTOp9vi4T0oCFSGSiXP70CJw==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:53 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TNdQuka9fbvfkSsTmYsQFb1EqfB3lCublClE3PxMvF5mrB3W5IAhyi9Qcj6no+Y6QLCuSqbR38yyPcSRWK3+hw==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:55 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6YMEqq3rW2wmX6HsGgwN48nUGA/mk6NIEmJa+GaJDKPD+EnGD9YHHdae+MEkJPvMNCAftTfWVx80dtq1wmhOeg==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:18:56 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FxuLS1oRIr3GtTtt6/F3Ixfl3xqN7FBB53M1AlE2zdA9YMYn+Cx+zDZ0YkDV2YEM6hHYoFyppBbBZ7VP9dePCQ==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:39:00 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oqvDbSpM9AzVYXYQXI+DcbCskMooeXEE9FSWCtkIEzKI0I4BiHGofSWgLz1ip3VeTViXcPk8hVPSQBZHfelR6w==", "shorter"=>{"url"=>"www.google.com"}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (1.1ms)
+  Rendered shorter/shorter.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 207ms (Views: 204.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:39:02 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRjpdZ08sWNR7qnXU5R0YnFqv6UQ67M1jyHKEpoN8+0/Y6QZPwHtEqEv8PptvIJNjJ64H8GuR2KpNUpfPuyxNA==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:39:03 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I/Y3pWhGdeMbXsr0g+/YUON/umbQE0H0+ozds5TcJCgJjXrJynspkuufk9m9xy5/Hou93AFWtaPcmF3+MD1m8Q==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:39:04 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tGByngKmF3l6QiEAmWzOHj3liC2aDJVEowkb4ZJuvBSeGz/yoJtLCIqDeC2nRDgxwBGPl0tJYROFHZusNo/+zQ==", "shorter"=>{"url"=>""}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.8ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:39:08 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SO07An4hQSre80rU9+eHr09qBwfqAzUOnjyEf4N+LepilnZu3BwdWy4yE/nJz3GAsp4AvTtGwVm4KAQyJ59vMw==", "shorter"=>{"url"=>"www.google.com"}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (1.1ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/shorter" for 127.0.0.1 at 2017-06-01 12:39:11 -0300
+Processing by ShorterController#shorter as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s0Reu2v73NNptkuMb8v4sDVV6N3/9gtN5uwzmgElLHmZPxPXycaAopl3EqFR4w6fyKHvZy6z/xrA+LPXpcRuoA==", "shorter"=>{"url"=>"www.google.com"}, "commit"=>"Faca nela!"}
+  Rendering shorter/shorter.html.erb within layouts/application
+  Rendered shorter/_form.html.erb (0.9ms)
+  Rendered shorter/shorter.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+

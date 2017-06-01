@@ -7,8 +7,15 @@ class ShorterController < ApplicationController
   def shorter
     url = shorter_params[:url]
     redis = Redis.new
-    sid = redis.incr("urls._id").to_s(36)
-    @id = sid.to_s(36)
+    id = redis.incr("urls._id").to_s(36)
+    hashUrl = Digest::MD5.hexdigest(url)
+    key = "urls:#{hash}:#{id}"
+    unless redis.keys("urls:#{hashUrl}:*").first
+      redis.set(key, url)
+    end
+    @key = redis.keys("urls:*:#{id}").first
+    @url = redis.get(key) if key
+
   end
 
   def shorter_params
