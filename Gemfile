@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'redis'
-gem "twitter-bootstrap-rails"
+gem 'materialize-sass'
 gem 'pry-rails'
 
 group :development, :test do
