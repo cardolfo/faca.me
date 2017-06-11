@@ -1,9 +1,8 @@
  <div class="row">
-  <%= form_tag("/shorter", method: ":post", class: 'col s12') do %>
+  <%= form_tag("/shorter", method: ":post") do %>
   <div class="row">
      <div class="input-field col s8">
-       <%= text_field_tag "shorter[url]", nil, class: "validate" %>
-       <%= label_tag "shorter_url", "Digite a url a ser encurtada"%>
+       <%= text_field_tag "shorter[url]", nil, placeholder: "Digite a url a ser encurtada" %>
      </div>
      <div class="input-field col s4">
        <%= submit_tag "Faca nela!", class: 'waves-effect waves-light btn' %>
