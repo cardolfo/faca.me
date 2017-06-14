@@ -24,7 +24,7 @@ class ShorterController < ApplicationController
     id = params[:id]
     redis = Redis.new
     key = redis.keys("urls:*:#{id}").first
-    url = redis.get(key)    
+    url = redis.get(key)
     redirect_to url
   end
 

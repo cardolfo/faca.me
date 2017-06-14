@@ -1,6 +1,9 @@
-<%= form_tag("/shorter", method: ":post") do %>
-  <div class="ui input">
-    <%= text_field_tag "shorter[url]", nil, placeholder: "Digite a url a ser encurtada" %>
-  </div>
-  <%= submit_tag "Faca nela!", class: '' %>
-<% end %>
+<div class="ui basic center aligned segment">
+  <%= form_tag("/shorter", method: ":post", class: "ui fluid form") do %>
+    <div class="ui massive action input">
+      <%= text_field_tag "shorter[url]", nil, placeholder: "URL a ser esfaqueada..." %>
+      <%= submit_tag "Faca nela!", class: 'ui button' %>
+    </div>
+
+  <% end %>
+</div>
