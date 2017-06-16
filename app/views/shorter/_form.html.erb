@@ -1,8 +1,10 @@
 <div class="ui basic center aligned segment">
   <%= form_tag("/shorter", method: ":post", class: "ui fluid form") do %>
     <div class="ui massive action input">
-      <%= text_field_tag "shorter[url]", nil, placeholder: "URL a ser esfaqueada..." %>
-      <%= submit_tag "Faca nela!", class: 'ui button' %>
+      <%= text_field_tag "shorter[url]", nil, placeholder: "URL a ser cortada..." %>
+      <%= content_tag :button, type: ":submit", class: "ui button" do %>
+        Vai!
+      <% end %>
     </div>
 
   <% end %>
