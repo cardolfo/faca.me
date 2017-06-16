@@ -25,7 +25,11 @@ class ShorterController < ApplicationController
     redis = Redis.new
     key = redis.keys("urls:*:#{id}").first
     url = redis.get(key)
-    redirect_to url
+    unless id == "shorter"
+      redirect_to url
+    else
+      redirect_to "/"
+    end
   end
 
   def shorter_params
