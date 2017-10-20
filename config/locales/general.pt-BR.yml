@@ -1,0 +1,7 @@
+pt-BR:
+  app:
+    appname: "FacaMe"
+    header_messages:
+      error: "Erro"
+    messages:
+      not_valid_url: "ahhh, que pena, essa URL informada não é valida... :("

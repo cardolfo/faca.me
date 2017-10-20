@@ -1,6 +1,8 @@
 <%= render 'form' %>
-<div class="ui basic center aligned segment">
-  <div class="ui massive label">
-    <%=@shortUrl %>
+<% unless @shortUrl.nil? %>
+  <div class="ui basic center aligned segment">
+    <div class="ui massive label">
+      <%=@shortUrl %>
+    </div>
   </div>
-</div>
+<% end %>

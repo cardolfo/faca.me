@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>faca.me</title>
+    <title><%= t("app.appname") %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -14,6 +14,16 @@
   </br>
   </br>
   </br>
+  <%unless @error_message.nil? %>
+    <div class="ui negative message">
+      <div class="header">
+        <%= t("app.header_messages.error") %>
+      </div>
+      <p>
+        <%=@error_message%>
+      </p>
+    </div>
+  <% end %>
     <div class="ui very padded text container segment">
       <div class="ui one column centered grid">
         <div class="center aligned column">
