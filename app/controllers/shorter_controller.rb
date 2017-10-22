@@ -5,7 +5,7 @@ class ShorterController < ApplicationController
   end
 
   def shorter  
-    url = shorter_params[:url])    
+    url = shorter_params[:url]
     hashUrl = Digest::MD5.hexdigest(url)
     redis = Redis.new
     unless redis.keys("urls:#{hashUrl}:*").first
