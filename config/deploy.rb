@@ -12,7 +12,7 @@ require 'mina/rvm'    # for rvm support. (https://rvm.io)
 
 set :application_name, 'facaMe'
 set :domain, 'faca.me'
-set :deploy_to, '/home/facame/public_html/'
+set :deploy_to, '/home/facame/app'
 set :repository, 'git@gitlab.com:cardolfo/faca.me.git'
 set :branch, 'master'
 
