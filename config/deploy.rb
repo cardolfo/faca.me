@@ -35,8 +35,6 @@ task :environment do
 
   # For those using RVM, use this to load an RVM version@gemset.
   invoke :'rvm:use', 'ruby-2.4.1'
-  command  %[ruv=$(ruby --version)]
-  command  %[echo "-----> Versão do Ruby usada $ruv"]
 end
 
 # Put any custom commands you need to run at setup
